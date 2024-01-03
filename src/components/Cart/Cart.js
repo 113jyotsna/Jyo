@@ -30,7 +30,7 @@ const Cart = () => {
         </div>
         <div className='absolute inset-y-0 right-0 w-3/4 md:w-1/4 bg-white z-10'>
           <div className='flex justify-between h-16 bg-gray-200 bg-opacity-90'>
-            <p className='text-3xl mx-4 my-3 text-gray-700 font-display'>Cart <span className='text-lg'>({totalItems} items)</span></p>
+            <p className='text-3xl mx-4 my-3 text-gray-700 font-display'>Registered <span className='text-lg'>({totalItems} Events)</span></p>
               <svg onClick={() => dispatch(hideCart())}
                 className="m-4 h-6 w-6 cursor-pointer text-gray-700 hover:text-gray-900"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -42,13 +42,13 @@ const Cart = () => {
           <div className='h-full'>
             {totalItems === 0 &&
               <div className='font-body flex flex-col justify-center items-center my-auto w-full h-3/4 md:h-full'>
-                <p>Your cart is empty!</p>
+                <p>You have not Registered!</p>
                 <Link to='/shop'>
                   <button onClick={() => dispatch(hideCart())}
                     className='h-12 p-4 my-4 w-full text-sm bg-gray-900 text-white rounded transition
                     duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'
                   >
-                  Shop Now
+                  Register Now
                   </button>
                 </Link>
             </div> }
@@ -61,15 +61,15 @@ const Cart = () => {
                 </div>
                 <div className='flex p-4 justify-between'>
                   <p className=''>Subtotal</p>
-                  <p className='font-semibold'>${Math.round(totalPrice * 100)/ 100} </p>
+                  <p className='font-semibold'>Rs {Math.round(totalPrice * 100)/ 100} </p>
                 </div>
               </div>
               <div className='text-center'>
-                <button
+                <Link to="/checkout"><button
                 className='h-12 p-4 w-2/4 text-sm bg-gray-900 text-white rounded transition
                   duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'>
-                    Checkout
-                </button>
+                    Checkout 
+                </button></Link>
               </div>
             </div>
             }

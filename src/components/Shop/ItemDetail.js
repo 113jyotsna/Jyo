@@ -41,7 +41,7 @@ function ItemDetail() {
                         <div className='space-y-8'>
                             <div className='flex justify-between '>
                                 <h1 className='font-display text-2xl md:text-5xl text-gray-800'>{product.name}</h1>
-                                <p className='font-body text-lg md:text-xl text-gray-800'>${product.price}</p>
+                                <p className='font-body text-lg md:text-xl text-gray-800'>Rs {product.price}</p>
                             </div>
 
                             <div>
@@ -76,21 +76,21 @@ function ItemDetail() {
                                     {product.beginner &&
                                     <div className='flex'>
                                         <FontAwesomeIcon className='text-gray-700' icon={ faSeedling } />
-                                        <p className='font-body ml-2 text-gray-700'>Beginner Friendly</p>
+                                        <p className='font-body ml-2 text-gray-700'>Entertainment</p>
                                     </div>}
                                 </div>
                                 <div>
                                     {product.purify &&
                                     <div className='flex'>
                                         <FontAwesomeIcon className='text-gray-700' icon={ faWind } />
-                                        <p className='font-body ml-2 text-gray-700'>Air Purifying</p>
+                                        <p className='font-body ml-2 text-gray-700'>Beginner Friendly</p>
                                     </div>}
                                 </div>
                                 <div>
                                     {product.petFriendly &&
                                     <div className='flex'>
                                         <FontAwesomeIcon className='text-gray-700' icon={ faPaw } />
-                                        <p className='font-body ml-2 text-gray-700'>Pet Friendly</p>
+                                        <p className='font-body ml-2 text-gray-700'>User Friendly</p>
                                     </div>}
                                 </div>
                             </div>
@@ -99,13 +99,13 @@ function ItemDetail() {
                                 onClick={handleClick}
                                 className='w-full h-12 my-4 p-4 font-body text-sm bg-gray-900 bg-opacity-70 text-white rounded
                                 transition duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border active:bg-gray-100 focus:outline-none'>
-                                    Add to Cart
+                                    Register
                             </button>
 
                             <div className='flex justify-around pt-4'>
                                 <p className='w-24 font-body text-gray-600 hover:text-gray-900'>Made to order</p>
                                 <p className='w-24 font-body text-gray-600 hover:text-gray-900'>60 Day Guarantee</p>
-                                <p className='w-24 font-body text-gray-600 hover:text-gray-900'>24/7 Plant Help</p>
+                                <p className='w-24 font-body text-gray-600 hover:text-gray-900'>24/7 Event Help</p>
                             </div>
                         </div>
                     </div>

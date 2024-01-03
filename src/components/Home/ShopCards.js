@@ -12,26 +12,26 @@ function ShopCards () {
             <ul className='flex flex-col md:flex-row space-y-12 md:space-y-0 m-auto text-center md:justify-around md:justify-between text-2xl 2xl:w-3/4 '>
                 <Link to='/shop/beginner'>
                     <li className='space-y-6 w-3/4 md:w-full text-center m-auto cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
-                        <img className='h-96 w-full shadow-xl' src={snake2} alt=''/>
+                        <img className='h-96 sm:w-1/2 mx-auto shadow-xl' src={snake2} alt=''/>
+                        <p className='font-body'>Entertainment</p>
+                    </li>
+                </Link>
+                <Link to='/shop/airPurifying' >
+                    <li className='space-y-6 w-3/4 md:w-full text-center m-auto cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
+                        <img className='h-96 sm:w-1/2 mx-auto shadow-xl' src={collection} alt=''/>
                         <p className='font-body'>Beginner Friendly</p>
                     </li>
                 </Link>
-                <Link to='/shop/airPurifying'>
+                <Link to='/shop/pet-friendly' >
                     <li className='space-y-6 w-3/4 md:w-full text-center m-auto cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
-                        <img className='h-96 w-full shadow-xl' src={collection} alt=''/>
-                        <p className='font-body'>Air Purifiers</p>
+                        <img className='h-96 sm:w-1/2 mx-auto shadow-xl hover:shadow-2xl' src={petFriendly} alt=''/>
+                        <p className='font-body'>User Friendly</p>
                     </li>
                 </Link>
-                <Link to='/shop/pet-friendly'>
+                <Link to='/shop/succulents' className='flex-none w-full md:w-1/2'>
                     <li className='space-y-6 w-3/4 md:w-full text-center m-auto cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
-                        <img className='h-96 w-full shadow-xl hover:shadow-2xl' src={petFriendly} alt=''/>
-                        <p className='font-body'>Pet Friendly</p>
-                    </li>
-                </Link>
-                <Link to='/shop/succulents'>
-                    <li className='space-y-6 w-3/4 md:w-full text-center m-auto cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
-                        <img className='h-96 w-full shadow-xl' src={succulents} alt=''/>
-                        <p className='font-body'>Shop Succulents</p>
+                        <img className='h-96 sm:w-1/2 mx-auto shadow-xl' src={succulents} alt=''/>
+                        <p className='font-body'>Register Events</p>
                     </li>
                 </Link>
             </ul>
